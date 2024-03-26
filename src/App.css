@@ -4,3 +4,10 @@
   padding: 2rem;
   text-align: center;
 }
+
+main {
+  background-color: #F5F5F5;
+  border-radius: 0.5rem;
+  min-height: 90vh;
+  padding: 2rem;
+}

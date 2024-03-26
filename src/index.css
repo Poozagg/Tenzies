@@ -28,17 +28,10 @@ a:hover {
 }
 
 body {
-  margin: 3rem 2rem;
-  display: flex;
+  margin: 0;
   place-items: center;
-  /* min-width: 80vh; */
-  min-height: 85vh;
-  background-color: #F5F5F5;
-  /* padding: 5rem 5rem; */
-  border-radius: 0.5rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  /* min-height: 85vh; */
+  background-color: #0B2434;
 }
 
 h1 {
