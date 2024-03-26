@@ -1,6 +1,7 @@
 A game of Tenzies created using HTML, CSS, Javascript and React.
-
+----------------------------------------------------
 Tenzies:
+
 A dice game where the objective is to be the first to roll all 10 of your dice to the same number.
 
 In the game/app, click on one of the dices to hold it. & when you click roll, the held dice wont change.
