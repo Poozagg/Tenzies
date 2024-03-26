@@ -2,13 +2,13 @@ A game of Tenzies created using HTML, CSS, Javascript and React.
 ----------------------------------------------------
 Tenzies:
 
-A dice game where the objective is to be the first to roll all 10 of your dice to the same number.
+A dice game where the objective is to roll 10 dices that are all the same number.
 
-In the game/app, click on one of the dices to hold it. & when you click roll, the held dice wont change.
+In the game/app, click on one of the dices to hold it. & when you click roll, those held dice wont change.
 
-Keep rolling & holding the dice with same number, until all the dices are same number.
+Keep rolling & holding the dice with same number, until all the dices rolled are the same number.
 
-When you hold the last number of the ten, YAY!! you have succeeded and achieved 'Tenzies'!
+As soon as you hold the last dice, YAY!! you have succeeded and achieved 'Tenzies'!
 
 
 
