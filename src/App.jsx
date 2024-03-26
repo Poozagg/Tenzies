@@ -3,6 +3,13 @@ import Die from '../components/Die'
 import './App.css'
 
 function App() {
+  function allNewDice() {
+    let diceArray = []
+    for (let i = 0; i < 10; i++) {
+      diceArray.push(Math.floor(Math.random() * 6) + 1)
+    }
+    return diceArray
+  }
 
   return (
     <main>
