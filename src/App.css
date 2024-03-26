@@ -49,6 +49,7 @@ main {
   color: white;
   border-radius: 1rem;
   font-family: 'Karla', sans-serif;
+  cursor: pointer;
 }
 .Roll--Button:focus{
   outline: none;
