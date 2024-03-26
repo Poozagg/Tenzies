@@ -12,13 +12,13 @@ function App() {
     return diceArray
   }
   const diceElements = dice.map((die) => <Die value={die} />)
-  console.log(diceElements)
 
   return (
     <main>
       <div className="dice--container">
         {diceElements}
       </div>
+      <button className="Roll--Button"> Roll </button>
     </main>
 
   )
