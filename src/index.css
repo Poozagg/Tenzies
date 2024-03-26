@@ -32,6 +32,7 @@ body {
   place-items: center;
   /* min-height: 85vh; */
   background-color: #0B2434;
+  font-family: 'Karla', sans-serif;
 }
 
 h1 {
