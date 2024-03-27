@@ -7,11 +7,17 @@ function App() {
   function allNewDice() {
     let diceArray = []
     for (let i = 0; i < 10; i++) {
-      diceArray.push(Math.floor(Math.random() * 6))
+      diceArray.push({
+        value: Math.floor(Math.random() * 6),
+        isHeld: false
+      })
     }
     return diceArray
   }
-  const diceElements = dice.map((die) => <Die value={die} />)
+
+  // console.log(diceArray)
+
+  const diceElements = dice.map((die,index) => <Die value={die.value} key={index} />)
 
   function rollDice() {
     setDice(allNewDice())
