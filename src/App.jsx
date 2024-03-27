@@ -55,8 +55,15 @@ function App() {
   }
 
   //  side-effect to check for tenzies
+  // this is to check two pieces of state (dice & tenzies in sync)
   useEffect(() => {
-    console.log("Dice state has changed")
+    const allHeld = dice.every(die => die.isHeld)
+    const firstValue = dice[0].value
+    const allSameValue = dice.every(die => die.value === firstValue)
+    if (allHeld && allSameValue) {
+      setTenzies(true)
+      console.log("You won")
+    }
   }, [dice])
 
   return (
