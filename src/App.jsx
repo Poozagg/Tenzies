@@ -7,6 +7,7 @@ import './App.css'
 function App() {
   const [dice, setDice] = useState(allNewDice())
   const [tenzies, setTenzies] = useState(false)
+  const [rollCounter, setRollCounter] = useState(0)
 
   function allNewDice() {
     let diceArray = []
@@ -17,7 +18,6 @@ function App() {
         id: nanoid()
       })
     }
-    console.log(diceArray)
     return diceArray
   }
 
@@ -46,7 +46,9 @@ function App() {
                       ))
 
   function rollDice() {
-    // setDice(allNewDice())
+    //--! if tenzies is true, reset the dice and set tenzies to false !--
+  // useEffect to update the rollCounter
+    setRollCounter(prev => prev + 1)
     if (tenzies) {
       setDice(allNewDice())
       setTenzies(false)
@@ -75,15 +77,21 @@ function App() {
       {tenzies && <Confetti />}
       <h1 className="title">Tenzies</h1>
       <p className="instructions">Roll until all dice are the same. Click each die to freeze it at its current value between rolls.</p>
+
         <div className="dice--container">
           {diceElements}
         </div>
+
       <button
         className="Roll--Button"
         onClick={rollDice}
       >
         {tenzies ? "New Game" : "Roll"}
       </button>
+
+        <div className="rollcounter--message">
+          {tenzies && `You completed the Tenzies in ${rollCounter} rolls.`}
+        </div>
     </main>
 
   )

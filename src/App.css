@@ -57,6 +57,12 @@ main {
 .Roll--Button:active {
   box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
 }
+.rollcounter--message {
+  font-size: 1.5rem;
+  font-weight:lighter;
+  margin-top: 1rem;
+  color: #5035FF;
+}
 @media screen and (max-width: 767px) {
   .dice--container {
     display: grid;
