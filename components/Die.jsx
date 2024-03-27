@@ -3,9 +3,12 @@ export default function Die(props) {
     backgroundColor: props.isHeld? "#59E391" : "white"
   }
   return (
-    <div className="dice--face" style={styles}>
+    <button
+      className="dice--face"
+      style={styles}
+      onClick={props.handleClick}
+    >
       <h2 className="dice--num">{props.value}</h2>
-
-    </div>
+    </button>
   )
 }
