@@ -72,13 +72,6 @@ function App() {
     }
   }, [dice])
 
-  // // useEffect to update the rollCounter
-  // useEffect(() => {
-  //   if (!tenzies) {
-  //     setRollCounter(prev => prev + 1)
-  //   }
-  // }, [setDice, tenzies])
-
   return (
     <main>
       {tenzies && <Confetti />}
@@ -96,7 +89,9 @@ function App() {
         {tenzies ? "New Game" : "Roll"}
       </button>
 
-      {tenzies && `You completed the Tenzies in ${rollCounter} rolls `}
+        <div className="rollcounter--message">
+          {tenzies && `You completed the Tenzies in ${rollCounter} rolls.`}
+        </div>
     </main>
 
   )
