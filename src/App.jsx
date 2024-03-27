@@ -21,7 +21,7 @@ function App() {
   // console.log(diceArray)
 
   const diceElements = dice.map((die) => (
-                      <Die value={die.value} key={die.id} />
+                      <Die value={die.value} key={die.id} isHeld={die.isHeld}/>
                       ))
 
   function rollDice() {
