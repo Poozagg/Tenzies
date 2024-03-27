@@ -1,10 +1,12 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { nanoid } from 'nanoid'
 import Die from '../components/Die'
 import './App.css'
 
 function App() {
   const [dice, setDice] = useState(allNewDice())
+  const [tenzies, setTenzies] = useState(false)
+
   function allNewDice() {
     let diceArray = []
     for (let i = 0; i < 10; i++) {
@@ -52,6 +54,10 @@ function App() {
     )
   }
 
+  //  side-effect to check for tenzies
+  useEffect(() => {
+    console.log("Dice state has changed")
+  }, [dice])
 
   return (
     <main>
