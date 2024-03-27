@@ -21,7 +21,7 @@ main {
   grid-template: auto auto / repeat(5, 1fr);
   gap: 2rem;
   padding: 2rem;
-  /* margin: 0.5rem; */
+  margin-bottom: 0.5rem;
 }
 .dice--face {
   height: 4rem;
@@ -63,7 +63,7 @@ main {
     grid-template: auto auto / repeat(2, 1fr);
     gap: 1rem;
     padding: 2rem;
-    /* margin: 0.5rem; */
+    margin-bottom: 0.5rem;
   }
   .dice--face {
     height: 2.5rem;
